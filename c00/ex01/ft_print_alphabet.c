@@ -1,16 +1,17 @@
 #include <stdio.h>
+#include <unistd.h>
 
 void ft_print_alphabet(void)
 {
 	for(int i = 97; i < 123; ++i)
 	{
-		printf("%c", (char)i);
+		write(1, &i, 1);
 	}
 }
 
-// int main(void)
-// {
-	// ft_print_alphabet();
+int main(void)
+{
+	ft_print_alphabet();
 	
-	// return 0;
-// }
+	return 0;
+}
