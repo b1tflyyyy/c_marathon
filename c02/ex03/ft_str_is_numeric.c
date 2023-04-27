@@ -4,7 +4,7 @@ int ft_str_is_numeric(char* str)
 {
 	if(*str == NULL)
 	{
-		return 1;
+		return -1;
 	}
 	
 	int i = 0;
@@ -12,11 +12,11 @@ int ft_str_is_numeric(char* str)
 	{
 		if((int)*(str + i) < 48 || (int)*(str + i) > 57)
 		{
-			return 1;
+			return 0;
 		}
 	}
 
-	return 0;
+	return 1;
 }
 
 // int main(void)
