@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-// if lowercase return 0
+// if lowercase return 1
 int ft_str_is_lowercase(char* str)
 {
 	if(*str == NULL)
 	{
-		return 1;
+		return -1;
 	}
 	
 	int i = 0;
@@ -13,11 +13,11 @@ int ft_str_is_lowercase(char* str)
 	{
 		if((int)*(str + i) < 97 || (int)*(str + i) > 122)
 		{
-			return 1;
+			return 0;
 		}
 	}
 	
-	return 0;
+	return 1;
 }
 
 // int main(void)
