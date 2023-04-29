@@ -6,9 +6,7 @@ char* ft_strupcase(char* str)
 	int i = 0;
 	for(; *(str + i); ++i)
 	{
-		if((int)(*(str + i)) < 65 ||
-		   (int)(*(str + i)) > 90 &&
-		   (int)(*(str + i)) < 97 ||
+		if((int)(*(str + i)) < 97 ||
 		   (int)(*(str + i)) > 122)
 		   {
 			   continue;
@@ -20,12 +18,12 @@ char* ft_strupcase(char* str)
 	return str;
 }
 
-// int main(void)
-// {
-	// char str[] = "hello world tt";
-	// ft_strupcase(str);
+int main(void)
+{
+	char str[] = "helLo world * = -tt";
+	ft_strupcase(str);
 	
-	// printf("%s", str);
+	printf("%s", str);
 	
-	// return 0;
-// }
+    return 0;
+}
