@@ -18,12 +18,12 @@ char* ft_strupcase(char* str)
 	return str;
 }
 
-int main(void)
-{
-	char str[] = "helLo world * = -tt";
-	ft_strupcase(str);
+// int main(void)
+// {
+	// char str[] = "helLo world * = -tt";
+	// ft_strupcase(str);
 	
-	printf("%s", str);
+	// printf("%s", str);
 	
-    return 0;
-}
+    // return 0;
+// }
