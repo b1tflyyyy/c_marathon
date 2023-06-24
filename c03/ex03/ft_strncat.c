@@ -23,13 +23,13 @@ char* ft_strncat(char* dest, const char* src, unsigned int nb)
     return dest;
 }
 
-int main(void)
-{
-    char str1[20] = "hello ";
-    char str2[] = "world!!!";
+// int main(void)
+// {
+//     char str1[20] = "hello ";
+//     char str2[] = "world!!!";
 
-    char* str = ft_strncat(str1, str2, sizeof(str2));
-    printf("%s", str);
+//     char* str = ft_strncat(str1, str2, sizeof(str2));
+//     printf("%s", str);
 
-    return 0;
-}
+//     return 0;
+// }
