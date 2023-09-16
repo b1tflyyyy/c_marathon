@@ -7,12 +7,18 @@ int ft_iterative_factorial(int nb)
         return 1;
     }
 
-    return nb * ft_iterative_factorial(nb - 1);
+    int factorial = 1;
+    for (; nb != 0; --nb)
+    {
+        factorial *= nb;
+    }
+
+    return factorial;
 }
 
 // int main(void)
 // {
-//     int result = ft_iterative_factorial(4);
+//     int result = ft_iterative_factorial(5);
 //     printf("%d\n", result);
 
 //     return 0;
