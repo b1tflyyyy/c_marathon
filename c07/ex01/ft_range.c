@@ -11,7 +11,7 @@ int* ft_range(int min, int max)
     const size_t size = max - min;
     int* new_array = malloc(sizeof(int) * size);
 
-    for (size_t i = 0; i <= size && min <= max; ++min, ++i)
+    for (size_t i = 0; i < size && min < max; ++min, ++i)
     {
         new_array[i] = min;        
     }
