@@ -1,0 +1,1 @@
+clang -c -o libft.a libft.c
